@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { getProducts } from "../../assets/data/products";
 
 export const Card = () => {
+  const [productList, setProductList] = useState([]);
+  useEffect(() => {
+    getProducts().then((res) => setProductList(res));
+  }, []);
   return (
     <div>
       {getProducts.map((item) => {
