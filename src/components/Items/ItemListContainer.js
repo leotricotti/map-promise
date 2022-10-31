@@ -8,7 +8,7 @@ export const Card = () => {
   }, []);
   return (
     <div>
-      {getProducts.map((item) => {
+      {productList.map((item) => {
         return (
           <div key={item.id}>
             <img src={item.img} alt={item.title} />
