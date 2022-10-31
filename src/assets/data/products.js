@@ -4,7 +4,7 @@ const Products = [
     title: "Chuck 70",
     gender: "women",
     category: "sneakers",
-    img: "../src/assets/images/mujer/calzado/img1.jpg",
+    img: "../images/mujer/calzado/img1.jpg",
     desc: "Las Chuck 70 combinan los mejores detalles de las Chuck de los 70 con una confección artesanal impecable y materiales premium.",
   },
   {
@@ -258,9 +258,9 @@ const Products = [
 ];
 
 export const getProducts = () => {
-  let products = new Promise(function (resolve) {
+ return new Promise(function (resolve) {
     setTimeout(() => {
-      resolve(products);
+      resolve(Products);
     }, 2000);
   });
 };
